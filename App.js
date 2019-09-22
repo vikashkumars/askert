@@ -17,14 +17,14 @@ const navigator =createStackNavigator({
  AskQuestion:AskquestionScreen,
  Login:LoginScreen
 },{
-  initialRouteName:'Search',
+  initialRouteName:'Category',
   defaultNavigationOptions: {
-    title: 'Askert',
-    headerLeft: <ActionBarImage />,
-    headerStyle: {
-      backgroundColor: '#e3e3e3',
-    },
-    headerTintColor: '#606070',
+    title: '',
+    //headerLeft: <ActionBarImage />,
+    //headerStyle: {
+     // backgroundColor: '#e3e3e3',
+   // },
+    //headerTintColor: '#606070',
   },
 });
 export default createAppContainer(navigator);

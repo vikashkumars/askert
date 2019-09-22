@@ -20,19 +20,19 @@ export default class SearchBarExample extends Component {
 
         <Container style={{height:500}}>
          <View style={style.ButtonView}>
-          <Button style={style.ButtonFirst} iconLeft>
-            <Icon  style={{color:'black'}} name='home' />
+          <Button onPress={()=>this.props.navigation.navigate('SubCategory')} style={style.ButtonFirst} iconLeft >
+            <Icon  style={{color:'black'}} name='home'  />
            </Button>
 
-          <Button style={style.Button2} iconLeft transparent primary>
+          <Button onPress={()=>this.props.navigation.navigate('Profile') }style={style.Button2} iconLeft transparent primary>
             <Icon style={{color:'black'}} name='beer' />
            
           </Button>
-          <Button style={style.Button3} iconLeft dark>
+          <Button onPress={()=>this.props.navigation.navigate('AskQuestion')}  style={style.Button3} iconLeft dark>
             <Icon style={{color:'black'}} name='cog' />
           
           </Button>
-          <Button style={style.Button4} iconLeft>
+          <Button  onPress={()=>this.props.navigation.navigate('Login')}  style={style.Button4} iconLeft>
             <Icon style={{color:'black'}} name='home' />
           </Button> 
         </View>
